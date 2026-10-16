@@ -1,42 +1,42 @@
-import OAI04
-import Mathlib.Algebra.Group.Pi.Units
-import Mathlib.Algebra.Order.Archimedean.Real.Basic
-import Mathlib.Analysis.Analytic.IsolatedZeros
-import Mathlib.Analysis.Analytic.Order
-import Mathlib.Analysis.Analytic.Uniqueness
-import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension
-import Mathlib.Analysis.Complex.CauchyIntegral
-import Mathlib.Analysis.Complex.Convex
-import Mathlib.Analysis.Complex.HalfPlane
-import Mathlib.Analysis.Complex.Liouville
-import Mathlib.Analysis.Complex.RealDeriv
-import Mathlib.Analysis.MellinInversion
-import Mathlib.Analysis.MellinTransform
-import Mathlib.Analysis.Normed.Group.FunctionSeries
-import Mathlib.Analysis.Normed.Ring.Finite
-import Mathlib.Analysis.SpecialFunctions.Complex.Analytic
-import Mathlib.Analysis.SpecialFunctions.Gamma.Beta
-import Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform
-import Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral
-import Mathlib.Analysis.SpecialFunctions.Gaussian.PoissonSummation
-import Mathlib.Analysis.SpecialFunctions.SmoothTransition
-import Mathlib.Data.ZMod.Basic
-import Mathlib.Logic.Equiv.Fin.Basic
-import Mathlib.MeasureTheory.Function.Floor
-import Mathlib.MeasureTheory.Integral.IntegralEqImproper
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts
-import Mathlib.NumberTheory.AbelSummation
-import Mathlib.NumberTheory.LSeries.AbstractFuncEq
-import Mathlib.NumberTheory.LSeries.HurwitzZetaEven
-import Mathlib.NumberTheory.LSeries.MellinEqDirichlet
-import Mathlib.NumberTheory.ModularForms.EisensteinSeries.Summable
-import Mathlib.NumberTheory.MulChar.Lemmas
-import Mathlib.NumberTheory.NumberField.Cyclotomic.Three
-import Mathlib.RingTheory.Ideal.Norm.AbsNorm
-import Mathlib.RingTheory.Ideal.Quotient.Operations
-import Mathlib.Tactic.FieldSimp
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.Ring
+import core.OAI04
+-- import Mathlib.Algebra.Group.Pi.Units
+-- import Mathlib.Algebra.Order.Archimedean.Real.Basic
+-- import Mathlib.Analysis.Analytic.IsolatedZeros
+-- import Mathlib.Analysis.Analytic.Order
+-- import Mathlib.Analysis.Analytic.Uniqueness
+-- import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension
+-- import Mathlib.Analysis.Complex.CauchyIntegral
+-- import Mathlib.Analysis.Complex.Convex
+-- import Mathlib.Analysis.Complex.HalfPlane
+-- import Mathlib.Analysis.Complex.Liouville
+-- import Mathlib.Analysis.Complex.RealDeriv
+-- import Mathlib.Analysis.MellinInversion
+-- import Mathlib.Analysis.MellinTransform
+-- import Mathlib.Analysis.Normed.Group.FunctionSeries
+-- import Mathlib.Analysis.Normed.Ring.Finite
+-- import Mathlib.Analysis.SpecialFunctions.Complex.Analytic
+-- import Mathlib.Analysis.SpecialFunctions.Gamma.Beta
+-- import Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform
+-- import Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral
+-- import Mathlib.Analysis.SpecialFunctions.Gaussian.PoissonSummation
+-- import Mathlib.Analysis.SpecialFunctions.SmoothTransition
+-- import Mathlib.Data.ZMod.Basic
+-- import Mathlib.Logic.Equiv.Fin.Basic
+-- import Mathlib.MeasureTheory.Function.Floor
+-- import Mathlib.MeasureTheory.Integral.IntegralEqImproper
+-- import Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts
+-- import Mathlib.NumberTheory.AbelSummation
+-- import Mathlib.NumberTheory.LSeries.AbstractFuncEq
+-- import Mathlib.NumberTheory.LSeries.HurwitzZetaEven
+-- import Mathlib.NumberTheory.LSeries.MellinEqDirichlet
+-- import Mathlib.NumberTheory.ModularForms.EisensteinSeries.Summable
+-- import Mathlib.NumberTheory.MulChar.Lemmas
+-- import Mathlib.NumberTheory.NumberField.Cyclotomic.Three
+-- import Mathlib.RingTheory.Ideal.Norm.AbsNorm
+-- import Mathlib.RingTheory.Ideal.Quotient.Operations
+-- import Mathlib.Tactic.FieldSimp
+-- import Mathlib.Tactic.Linarith
+-- import Mathlib.Tactic.Ring
 
 /-! Pinned OAI dependency closure, consolidated without changing public namespaces.
 Original module boundaries and hashes are preserved below. -/

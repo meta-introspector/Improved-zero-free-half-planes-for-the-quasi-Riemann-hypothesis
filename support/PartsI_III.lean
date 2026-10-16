@@ -1,4 +1,4 @@
-import OAI08
+import core.OAI08
 import Mathlib
 import Mathlib.Algebra.BigOperators.Field
 import Mathlib.Algebra.BigOperators.Fin

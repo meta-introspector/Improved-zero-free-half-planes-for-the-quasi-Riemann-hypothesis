@@ -1,16 +1,16 @@
-import OAI06
-import Mathlib.Algebra.BigOperators.Group.Finset.Basic
-import Mathlib.Analysis.Complex.PhragmenLindelof
-import Mathlib.Analysis.Complex.RemovableSingularity
-import Mathlib.Analysis.InnerProductSpace.Calculus
-import Mathlib.Analysis.MellinInversion
-import Mathlib.Analysis.Normed.Group.FunctionSeries
-import Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform
-import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.MeasureTheory.Constructions.Polish.Basic
-import Mathlib.MeasureTheory.Function.LocallyIntegrable
-import Mathlib.RingTheory.Radical.Basic
+import core.OAI06
+-- import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+-- import Mathlib.Analysis.Complex.PhragmenLindelof
+-- import Mathlib.Analysis.Complex.RemovableSingularity
+-- import Mathlib.Analysis.InnerProductSpace.Calculus
+-- import Mathlib.Analysis.MellinInversion
+-- import Mathlib.Analysis.Normed.Group.FunctionSeries
+-- import Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform
+-- import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
+-- import Mathlib.Analysis.SpecialFunctions.Pow.Real
+-- import Mathlib.MeasureTheory.Constructions.Polish.Basic
+-- import Mathlib.MeasureTheory.Function.LocallyIntegrable
+-- import Mathlib.RingTheory.Radical.Basic
 
 /-! Pinned OAI dependency closure, consolidated without changing public namespaces.
 Original module boundaries and hashes are preserved below. -/

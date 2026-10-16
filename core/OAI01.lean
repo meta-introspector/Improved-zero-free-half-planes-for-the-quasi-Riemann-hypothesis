@@ -1,226 +1,226 @@
 import Lean.Elab.Tactic.Omega
-import Mathlib.Algebra.BigOperators.Field
-import Mathlib.Algebra.BigOperators.Fin
-import Mathlib.Algebra.BigOperators.Group.Finset.Basic
-import Mathlib.Algebra.BigOperators.Group.Finset.Piecewise
-import Mathlib.Algebra.BigOperators.Group.Finset.Powerset
-import Mathlib.Algebra.BigOperators.Group.Finset.Sigma
-import Mathlib.Algebra.BigOperators.GroupWithZero.Finset
-import Mathlib.Algebra.BigOperators.Ring.Finset
-import Mathlib.Algebra.Group.AddChar
-import Mathlib.Algebra.Group.Commute.Units
-import Mathlib.Algebra.Group.Pi.Units
-import Mathlib.Algebra.GroupWithZero.Units.Fintype
-import Mathlib.Algebra.Module.ZLattice.Summable
-import Mathlib.Algebra.Order.Archimedean.Basic
-import Mathlib.Algebra.Order.BigOperators.Group.Finset
-import Mathlib.Algebra.Order.BigOperators.Ring.Finset
-import Mathlib.Algebra.Order.Floor.Semiring
-import Mathlib.Algebra.Ring.NonZeroDivisors
-import Mathlib.Algebra.Squarefree.Basic
-import Mathlib.Analysis.Analytic.Constructions
-import Mathlib.Analysis.Analytic.Uniqueness
-import Mathlib.Analysis.Asymptotics.Arith
-import Mathlib.Analysis.Asymptotics.Ring
-import Mathlib.Analysis.CStarAlgebra.ContinuousLinearMap
-import Mathlib.Analysis.CStarAlgebra.Matrix
-import Mathlib.Analysis.CStarAlgebra.Spectrum
-import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension
-import Mathlib.Analysis.Calculus.ContDiff.Bounds
-import Mathlib.Analysis.Calculus.ContDiff.Defs
-import Mathlib.Analysis.Calculus.ContDiff.Deriv
-import Mathlib.Analysis.Calculus.ContDiff.Operations
-import Mathlib.Analysis.Calculus.Deriv.Mul
-import Mathlib.Analysis.Calculus.Deriv.Shift
-import Mathlib.Analysis.Calculus.Deriv.Star
-import Mathlib.Analysis.Calculus.FDeriv.Measurable
-import Mathlib.Analysis.Calculus.FDeriv.Mul
-import Mathlib.Analysis.Calculus.InverseFunctionTheorem.Deriv
-import Mathlib.Analysis.Calculus.IteratedDeriv.Lemmas
-import Mathlib.Analysis.Calculus.ParametricIntegral
-import Mathlib.Analysis.Calculus.SmoothSeries
-import Mathlib.Analysis.Complex.Basic
-import Mathlib.Analysis.Complex.BorelCaratheodory
-import Mathlib.Analysis.Complex.BranchLogRoot
-import Mathlib.Analysis.Complex.CauchyIntegral
-import Mathlib.Analysis.Complex.Convex
-import Mathlib.Analysis.Complex.ExponentialBounds
-import Mathlib.Analysis.Complex.Hadamard
-import Mathlib.Analysis.Complex.HalfPlane
-import Mathlib.Analysis.Complex.Liouville
-import Mathlib.Analysis.Complex.LocallyUniformLimit
-import Mathlib.Analysis.Complex.Norm
-import Mathlib.Analysis.Complex.Polynomial.Basic
-import Mathlib.Analysis.Convolution
-import Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff
-import Mathlib.Analysis.Distribution.SchwartzSpace.Fourier
-import Mathlib.Analysis.Distribution.TemperedDistribution
-import Mathlib.Analysis.Fourier.AddCircleMulti
-import Mathlib.Analysis.Fourier.Inversion
-import Mathlib.Analysis.Fourier.PoissonSummation
-import Mathlib.Analysis.Fourier.RiemannLebesgueLemma
-import Mathlib.Analysis.InnerProductSpace.Adjoint
-import Mathlib.Analysis.InnerProductSpace.Calculus
-import Mathlib.Analysis.InnerProductSpace.Dual
-import Mathlib.Analysis.InnerProductSpace.LinearPMap
-import Mathlib.Analysis.InnerProductSpace.ProdL2
-import Mathlib.Analysis.InnerProductSpace.Projection.Basic
-import Mathlib.Analysis.InnerProductSpace.Projection.FiniteDimensional
-import Mathlib.Analysis.MellinInversion
-import Mathlib.Analysis.MellinTransform
-import Mathlib.Analysis.Meromorphic.Basic
-import Mathlib.Analysis.Normed.Group.Tannery
-import Mathlib.Analysis.Normed.Lp.SmoothApprox
-import Mathlib.Analysis.Normed.Module.Connected
-import Mathlib.Analysis.Normed.Module.FiniteDimension
-import Mathlib.Analysis.Normed.Module.MultipliableUniformlyOn
-import Mathlib.Analysis.Normed.Module.RCLike.Basic
-import Mathlib.Analysis.Normed.Operator.Compact.Basic
-import Mathlib.Analysis.Normed.Operator.Compact.FiniteDimension
-import Mathlib.Analysis.Normed.Operator.Extend
-import Mathlib.Analysis.Normed.Operator.Fredholm.Basic
-import Mathlib.Analysis.Normed.Ring.Finite
-import Mathlib.Analysis.Normed.Ring.InfiniteSum
-import Mathlib.Analysis.Real.Pi.Bounds
-import Mathlib.Analysis.Real.Sqrt
-import Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar
-import Mathlib.Analysis.SpecialFunctions.Complex.LogBounds
-import Mathlib.Analysis.SpecialFunctions.Complex.LogDeriv
-import Mathlib.Analysis.SpecialFunctions.Exp
-import Mathlib.Analysis.SpecialFunctions.ExpDeriv
-import Mathlib.Analysis.SpecialFunctions.Exponential
-import Mathlib.Analysis.SpecialFunctions.Gamma.Basic
-import Mathlib.Analysis.SpecialFunctions.Gamma.Beta
-import Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform
-import Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral
-import Mathlib.Analysis.SpecialFunctions.Gaussian.PoissonSummation
-import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
-import Mathlib.Analysis.SpecialFunctions.Log.Summable
-import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
-import Mathlib.Analysis.SpecialFunctions.Pow.Complex
-import Mathlib.Analysis.SpecialFunctions.Pow.Deriv
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.Analysis.SpecialFunctions.SmoothTransition
-import Mathlib.Analysis.SpecialFunctions.Sqrt
-import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
-import Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds
-import Mathlib.Analysis.SpecificLimits.Basic
-import Mathlib.Analysis.SpecificLimits.Normed
-import Mathlib.Analysis.SumIntegralComparisons
-import Mathlib.Basic.NNReal.Basic
-import Mathlib.Basic.Real.Basic
-import Mathlib.Data.Finset.Image
-import Mathlib.Data.Finset.Max
-import Mathlib.Data.Finset.Powerset
-import Mathlib.Data.Finsupp.Multiset
-import Mathlib.Data.Fintype.EquivFin
-import Mathlib.Data.Int.Order.Lemmas
-import Mathlib.Data.Multiset.Interval
-import Mathlib.Data.ZMod.Basic
-import Mathlib.FieldTheory.Finite.Basic
-import Mathlib.Geometry.Euclidean.Inversion.Calculus
-import Mathlib.Geometry.Manifold.ContMDiff.Atlas
-import Mathlib.Geometry.Manifold.ContMDiff.Basic
-import Mathlib.Geometry.Manifold.PartitionOfUnity
-import Mathlib.Geometry.Manifold.SmoothApprox
-import Mathlib.GroupTheory.GroupAction.Quotient
-import Mathlib.GroupTheory.Index
-import Mathlib.LinearAlgebra.Matrix.FixedDetMatrices
-import Mathlib.LinearAlgebra.Matrix.SpecialLinearGroup
-import Mathlib.LinearAlgebra.Matrix.ToLin
-import Mathlib.LinearAlgebra.UnitaryGroup
-import Mathlib.MeasureTheory.Constructions.HaarToSphere
-import Mathlib.MeasureTheory.Function.ContinuousMapDense
-import Mathlib.MeasureTheory.Function.Jacobian
-import Mathlib.MeasureTheory.Function.L2Space
-import Mathlib.MeasureTheory.Function.LocallyIntegrable
-import Mathlib.MeasureTheory.Function.LpSpace.Basic
-import Mathlib.MeasureTheory.Function.LpSpace.Complete
-import Mathlib.MeasureTheory.Function.LpSpace.Indicator
-import Mathlib.MeasureTheory.Group.FundamentalDomain
-import Mathlib.MeasureTheory.Integral.Bochner.Basic
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
-import Mathlib.MeasureTheory.Integral.Gamma
-import Mathlib.MeasureTheory.Integral.IntegralEqImproper
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.ContDiff
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts
-import Mathlib.MeasureTheory.Integral.Prod
-import Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace
-import Mathlib.MeasureTheory.Measure.Haar.OfBasis
-import Mathlib.MeasureTheory.Measure.Haar.Unique
-import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
-import Mathlib.MeasureTheory.Measure.Lebesgue.Complex
-import Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar
-import Mathlib.MeasureTheory.Measure.Lebesgue.Integral
-import Mathlib.MeasureTheory.Measure.Lebesgue.VolumeOfBalls
-import Mathlib.MeasureTheory.Measure.Real
-import Mathlib.MeasureTheory.Measure.WithDensity
-import Mathlib.MeasureTheory.SpecificCodomains.Pi
-import Mathlib.NumberTheory.ArithmeticFunction.Moebius
-import Mathlib.NumberTheory.Chebyshev
-import Mathlib.NumberTheory.Cyclotomic.Gal
-import Mathlib.NumberTheory.Cyclotomic.PrimitiveRoots
-import Mathlib.NumberTheory.DirichletCharacter.Bounds
-import Mathlib.NumberTheory.DirichletCharacter.Orthogonality
-import Mathlib.NumberTheory.GaussSum
-import Mathlib.NumberTheory.JacobiSum.Basic
-import Mathlib.NumberTheory.LSeries.Convolution
-import Mathlib.NumberTheory.LSeries.Dirichlet
-import Mathlib.NumberTheory.LSeries.DirichletContinuation
-import Mathlib.NumberTheory.LSeries.Nonvanishing
-import Mathlib.NumberTheory.LegendreSymbol.Complex
-import Mathlib.NumberTheory.LegendreSymbol.QuadraticChar.Basic
-import Mathlib.NumberTheory.LegendreSymbol.QuadraticChar.GaussSum
-import Mathlib.NumberTheory.MulChar.Basic
-import Mathlib.NumberTheory.MulChar.Duality
-import Mathlib.NumberTheory.MulChar.Lemmas
-import Mathlib.NumberTheory.NumberField.Basic
-import Mathlib.NumberTheory.NumberField.Cyclotomic.Ideal
-import Mathlib.NumberTheory.NumberField.Cyclotomic.PID
-import Mathlib.NumberTheory.NumberField.Cyclotomic.Three
-import Mathlib.NumberTheory.NumberField.DedekindZeta
-import Mathlib.NumberTheory.NumberField.Ideal.Asymptotics
-import Mathlib.NumberTheory.NumberField.Norm
-import Mathlib.Order.Filter.AtTopBot.Field
-import Mathlib.Order.PiLex
-import Mathlib.Order.Preorder.Finite
-import Mathlib.Probability.Moments.Variance
-import Mathlib.RingTheory.Coprime.Basic
-import Mathlib.RingTheory.Ideal.IsPrincipal
-import Mathlib.RingTheory.Ideal.Maps
-import Mathlib.RingTheory.Ideal.Norm.AbsNorm
-import Mathlib.RingTheory.Ideal.Quotient.Defs
-import Mathlib.RingTheory.Ideal.Quotient.Nilpotent
-import Mathlib.RingTheory.Ideal.Quotient.Operations
-import Mathlib.RingTheory.Ideal.Quotient.PowTransition
-import Mathlib.RingTheory.Ideal.Span
-import Mathlib.RingTheory.Multiplicity
-import Mathlib.RingTheory.PowerBasis
-import Mathlib.RingTheory.RootsOfUnity.AlgebraicallyClosed
-import Mathlib.RingTheory.RootsOfUnity.PrimitiveRoots
-import Mathlib.RingTheory.UniqueFactorizationDomain.Moebius
-import Mathlib.RingTheory.UniqueFactorizationDomain.Multiplicity
-import Mathlib.Tactic.ByContra
-import Mathlib.Tactic.FieldSimp
-import Mathlib.Tactic.FinCases
-import Mathlib.Tactic.FunProp
-import Mathlib.Tactic.Group
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.LinearCombination
-import Mathlib.Tactic.NormNum
-import Mathlib.Tactic.Positivity
-import Mathlib.Tactic.Ring
-import Mathlib.Tactic.Tauto
-import Mathlib.Topology.Algebra.Module.LinearPMap
-import Mathlib.Topology.Compactness.Lindelof
-import Mathlib.Topology.ContinuousMap.Bounded.ArzelaAscoli
-import Mathlib.Topology.ContinuousMap.Bounded.Normed
-import Mathlib.Topology.Covering.Quotient
-import Mathlib.Topology.Instances.Matrix
-import Mathlib.Topology.Maps.Proper.Basic
-import Mathlib.Topology.MetricSpace.HausdorffDistance
-import Mathlib.Topology.Order.ProjIcc
-import PrimeNumberTheoremAnd.Wiener
+-- import Mathlib.Algebra.BigOperators.Field
+-- import Mathlib.Algebra.BigOperators.Fin
+-- import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+-- import Mathlib.Algebra.BigOperators.Group.Finset.Piecewise
+-- import Mathlib.Algebra.BigOperators.Group.Finset.Powerset
+-- import Mathlib.Algebra.BigOperators.Group.Finset.Sigma
+-- import Mathlib.Algebra.BigOperators.GroupWithZero.Finset
+-- import Mathlib.Algebra.BigOperators.Ring.Finset
+-- import Mathlib.Algebra.Group.AddChar
+-- import Mathlib.Algebra.Group.Commute.Units
+-- import Mathlib.Algebra.Group.Pi.Units
+-- import Mathlib.Algebra.GroupWithZero.Units.Fintype
+-- import Mathlib.Algebra.Module.ZLattice.Summable
+-- import Mathlib.Algebra.Order.Archimedean.Basic
+-- import Mathlib.Algebra.Order.BigOperators.Group.Finset
+-- import Mathlib.Algebra.Order.BigOperators.Ring.Finset
+-- import Mathlib.Algebra.Order.Floor.Semiring
+-- import Mathlib.Algebra.Ring.NonZeroDivisors
+-- import Mathlib.Algebra.Squarefree.Basic
+-- import Mathlib.Analysis.Analytic.Constructions
+-- import Mathlib.Analysis.Analytic.Uniqueness
+-- import Mathlib.Analysis.Asymptotics.Arith
+-- import Mathlib.Analysis.Asymptotics.Ring
+-- import Mathlib.Analysis.CStarAlgebra.ContinuousLinearMap
+-- import Mathlib.Analysis.CStarAlgebra.Matrix
+-- import Mathlib.Analysis.CStarAlgebra.Spectrum
+-- import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension
+-- import Mathlib.Analysis.Calculus.ContDiff.Bounds
+-- import Mathlib.Analysis.Calculus.ContDiff.Defs
+-- import Mathlib.Analysis.Calculus.ContDiff.Deriv
+-- import Mathlib.Analysis.Calculus.ContDiff.Operations
+-- import Mathlib.Analysis.Calculus.Deriv.Mul
+-- import Mathlib.Analysis.Calculus.Deriv.Shift
+-- import Mathlib.Analysis.Calculus.Deriv.Star
+-- import Mathlib.Analysis.Calculus.FDeriv.Measurable
+-- import Mathlib.Analysis.Calculus.FDeriv.Mul
+-- import Mathlib.Analysis.Calculus.InverseFunctionTheorem.Deriv
+-- import Mathlib.Analysis.Calculus.IteratedDeriv.Lemmas
+-- import Mathlib.Analysis.Calculus.ParametricIntegral
+-- import Mathlib.Analysis.Calculus.SmoothSeries
+-- import Mathlib.Analysis.Complex.Basic
+-- import Mathlib.Analysis.Complex.BorelCaratheodory
+-- import Mathlib.Analysis.Complex.BranchLogRoot
+-- import Mathlib.Analysis.Complex.CauchyIntegral
+-- import Mathlib.Analysis.Complex.Convex
+-- import Mathlib.Analysis.Complex.ExponentialBounds
+-- import Mathlib.Analysis.Complex.Hadamard
+-- import Mathlib.Analysis.Complex.HalfPlane
+-- import Mathlib.Analysis.Complex.Liouville
+-- import Mathlib.Analysis.Complex.LocallyUniformLimit
+-- import Mathlib.Analysis.Complex.Norm
+-- import Mathlib.Analysis.Complex.Polynomial.Basic
+-- import Mathlib.Analysis.Convolution
+-- import Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff
+-- import Mathlib.Analysis.Distribution.SchwartzSpace.Fourier
+-- import Mathlib.Analysis.Distribution.TemperedDistribution
+-- import Mathlib.Analysis.Fourier.AddCircleMulti
+-- import Mathlib.Analysis.Fourier.Inversion
+-- import Mathlib.Analysis.Fourier.PoissonSummation
+-- import Mathlib.Analysis.Fourier.RiemannLebesgueLemma
+-- import Mathlib.Analysis.InnerProductSpace.Adjoint
+-- import Mathlib.Analysis.InnerProductSpace.Calculus
+-- import Mathlib.Analysis.InnerProductSpace.Dual
+-- import Mathlib.Analysis.InnerProductSpace.LinearPMap
+-- import Mathlib.Analysis.InnerProductSpace.ProdL2
+-- import Mathlib.Analysis.InnerProductSpace.Projection.Basic
+-- import Mathlib.Analysis.InnerProductSpace.Projection.FiniteDimensional
+-- import Mathlib.Analysis.MellinInversion
+-- import Mathlib.Analysis.MellinTransform
+-- import Mathlib.Analysis.Meromorphic.Basic
+-- import Mathlib.Analysis.Normed.Group.Tannery
+-- import Mathlib.Analysis.Normed.Lp.SmoothApprox
+-- import Mathlib.Analysis.Normed.Module.Connected
+-- import Mathlib.Analysis.Normed.Module.FiniteDimension
+-- import Mathlib.Analysis.Normed.Module.MultipliableUniformlyOn
+-- import Mathlib.Analysis.Normed.Module.RCLike.Basic
+-- import Mathlib.Analysis.Normed.Operator.Compact.Basic
+-- import Mathlib.Analysis.Normed.Operator.Compact.FiniteDimension
+-- import Mathlib.Analysis.Normed.Operator.Extend
+-- import Mathlib.Analysis.Normed.Operator.Fredholm.Basic
+-- import Mathlib.Analysis.Normed.Ring.Finite
+-- import Mathlib.Analysis.Normed.Ring.InfiniteSum
+-- import Mathlib.Analysis.Real.Pi.Bounds
+-- import Mathlib.Analysis.Real.Sqrt
+-- import Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar
+-- import Mathlib.Analysis.SpecialFunctions.Complex.LogBounds
+-- import Mathlib.Analysis.SpecialFunctions.Complex.LogDeriv
+-- import Mathlib.Analysis.SpecialFunctions.Exp
+-- import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+-- import Mathlib.Analysis.SpecialFunctions.Exponential
+-- import Mathlib.Analysis.SpecialFunctions.Gamma.Basic
+-- import Mathlib.Analysis.SpecialFunctions.Gamma.Beta
+-- import Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform
+-- import Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral
+-- import Mathlib.Analysis.SpecialFunctions.Gaussian.PoissonSummation
+-- import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
+-- import Mathlib.Analysis.SpecialFunctions.Log.Summable
+-- import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
+-- import Mathlib.Analysis.SpecialFunctions.Pow.Complex
+-- import Mathlib.Analysis.SpecialFunctions.Pow.Deriv
+-- import Mathlib.Analysis.SpecialFunctions.Pow.Real
+-- import Mathlib.Analysis.SpecialFunctions.SmoothTransition
+-- import Mathlib.Analysis.SpecialFunctions.Sqrt
+-- import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
+-- import Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds
+-- import Mathlib.Analysis.SpecificLimits.Basic
+-- import Mathlib.Analysis.SpecificLimits.Normed
+-- import Mathlib.Analysis.SumIntegralComparisons
+-- import Mathlib.Basic.NNReal.Basic
+-- import Mathlib.Basic.Real.Basic
+-- import Mathlib.Data.Finset.Image
+-- import Mathlib.Data.Finset.Max
+-- import Mathlib.Data.Finset.Powerset
+-- import Mathlib.Data.Finsupp.Multiset
+-- import Mathlib.Data.Fintype.EquivFin
+-- import Mathlib.Data.Int.Order.Lemmas
+-- import Mathlib.Data.Multiset.Interval
+-- import Mathlib.Data.ZMod.Basic
+-- import Mathlib.FieldTheory.Finite.Basic
+-- import Mathlib.Geometry.Euclidean.Inversion.Calculus
+-- import Mathlib.Geometry.Manifold.ContMDiff.Atlas
+-- import Mathlib.Geometry.Manifold.ContMDiff.Basic
+-- import Mathlib.Geometry.Manifold.PartitionOfUnity
+-- import Mathlib.Geometry.Manifold.SmoothApprox
+-- import Mathlib.GroupTheory.GroupAction.Quotient
+-- import Mathlib.GroupTheory.Index
+-- import Mathlib.LinearAlgebra.Matrix.FixedDetMatrices
+-- import Mathlib.LinearAlgebra.Matrix.SpecialLinearGroup
+-- import Mathlib.LinearAlgebra.Matrix.ToLin
+-- import Mathlib.LinearAlgebra.UnitaryGroup
+-- import Mathlib.MeasureTheory.Constructions.HaarToSphere
+-- import Mathlib.MeasureTheory.Function.ContinuousMapDense
+-- import Mathlib.MeasureTheory.Function.Jacobian
+-- import Mathlib.MeasureTheory.Function.L2Space
+-- import Mathlib.MeasureTheory.Function.LocallyIntegrable
+-- import Mathlib.MeasureTheory.Function.LpSpace.Basic
+-- import Mathlib.MeasureTheory.Function.LpSpace.Complete
+-- import Mathlib.MeasureTheory.Function.LpSpace.Indicator
+-- import Mathlib.MeasureTheory.Group.FundamentalDomain
+-- import Mathlib.MeasureTheory.Integral.Bochner.Basic
+-- import Mathlib.MeasureTheory.Integral.DominatedConvergence
+-- import Mathlib.MeasureTheory.Integral.Gamma
+-- import Mathlib.MeasureTheory.Integral.IntegralEqImproper
+-- import Mathlib.MeasureTheory.Integral.IntervalIntegral.ContDiff
+-- import Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts
+-- import Mathlib.MeasureTheory.Integral.Prod
+-- import Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace
+-- import Mathlib.MeasureTheory.Measure.Haar.OfBasis
+-- import Mathlib.MeasureTheory.Measure.Haar.Unique
+-- import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
+-- import Mathlib.MeasureTheory.Measure.Lebesgue.Complex
+-- import Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar
+-- import Mathlib.MeasureTheory.Measure.Lebesgue.Integral
+-- import Mathlib.MeasureTheory.Measure.Lebesgue.VolumeOfBalls
+-- import Mathlib.MeasureTheory.Measure.Real
+-- import Mathlib.MeasureTheory.Measure.WithDensity
+-- import Mathlib.MeasureTheory.SpecificCodomains.Pi
+-- import Mathlib.NumberTheory.ArithmeticFunction.Moebius
+-- import Mathlib.NumberTheory.Chebyshev
+-- import Mathlib.NumberTheory.Cyclotomic.Gal
+-- import Mathlib.NumberTheory.Cyclotomic.PrimitiveRoots
+-- import Mathlib.NumberTheory.DirichletCharacter.Bounds
+-- import Mathlib.NumberTheory.DirichletCharacter.Orthogonality
+-- import Mathlib.NumberTheory.GaussSum
+-- import Mathlib.NumberTheory.JacobiSum.Basic
+-- import Mathlib.NumberTheory.LSeries.Convolution
+-- import Mathlib.NumberTheory.LSeries.Dirichlet
+-- import Mathlib.NumberTheory.LSeries.DirichletContinuation
+-- import Mathlib.NumberTheory.LSeries.Nonvanishing
+-- import Mathlib.NumberTheory.LegendreSymbol.Complex
+-- import Mathlib.NumberTheory.LegendreSymbol.QuadraticChar.Basic
+-- import Mathlib.NumberTheory.LegendreSymbol.QuadraticChar.GaussSum
+-- import Mathlib.NumberTheory.MulChar.Basic
+-- import Mathlib.NumberTheory.MulChar.Duality
+-- import Mathlib.NumberTheory.MulChar.Lemmas
+-- import Mathlib.NumberTheory.NumberField.Basic
+-- import Mathlib.NumberTheory.NumberField.Cyclotomic.Ideal
+-- import Mathlib.NumberTheory.NumberField.Cyclotomic.PID
+-- import Mathlib.NumberTheory.NumberField.Cyclotomic.Three
+-- import Mathlib.NumberTheory.NumberField.DedekindZeta
+-- import Mathlib.NumberTheory.NumberField.Ideal.Asymptotics
+-- import Mathlib.NumberTheory.NumberField.Norm
+-- import Mathlib.Order.Filter.AtTopBot.Field
+-- import Mathlib.Order.PiLex
+-- import Mathlib.Order.Preorder.Finite
+-- import Mathlib.Probability.Moments.Variance
+-- import Mathlib.RingTheory.Coprime.Basic
+-- import Mathlib.RingTheory.Ideal.IsPrincipal
+-- import Mathlib.RingTheory.Ideal.Maps
+-- import Mathlib.RingTheory.Ideal.Norm.AbsNorm
+-- import Mathlib.RingTheory.Ideal.Quotient.Defs
+-- import Mathlib.RingTheory.Ideal.Quotient.Nilpotent
+-- import Mathlib.RingTheory.Ideal.Quotient.Operations
+-- import Mathlib.RingTheory.Ideal.Quotient.PowTransition
+-- import Mathlib.RingTheory.Ideal.Span
+-- import Mathlib.RingTheory.Multiplicity
+-- import Mathlib.RingTheory.PowerBasis
+-- import Mathlib.RingTheory.RootsOfUnity.AlgebraicallyClosed
+-- import Mathlib.RingTheory.RootsOfUnity.PrimitiveRoots
+-- import Mathlib.RingTheory.UniqueFactorizationDomain.Moebius
+-- import Mathlib.RingTheory.UniqueFactorizationDomain.Multiplicity
+-- import Mathlib.Tactic.ByContra
+-- import Mathlib.Tactic.FieldSimp
+-- import Mathlib.Tactic.FinCases
+-- import Mathlib.Tactic.FunProp
+-- import Mathlib.Tactic.Group
+-- import Mathlib.Tactic.Linarith
+-- import Mathlib.Tactic.LinearCombination
+-- import Mathlib.Tactic.NormNum
+-- import Mathlib.Tactic.Positivity
+-- import Mathlib.Tactic.Ring
+-- import Mathlib.Tactic.Tauto
+-- import Mathlib.Topology.Algebra.Module.LinearPMap
+-- import Mathlib.Topology.Compactness.Lindelof
+-- import Mathlib.Topology.ContinuousMap.Bounded.ArzelaAscoli
+-- import Mathlib.Topology.ContinuousMap.Bounded.Normed
+-- import Mathlib.Topology.Covering.Quotient
+-- import Mathlib.Topology.Instances.Matrix
+-- import Mathlib.Topology.Maps.Proper.Basic
+-- import Mathlib.Topology.MetricSpace.HausdorffDistance
+-- import Mathlib.Topology.Order.ProjIcc
+-- import PrimeNumberTheoremAnd.Wiener
 
 /-! Pinned OAI dependency closure, consolidated without changing public namespaces.
 Original module boundaries and hashes are preserved below. -/

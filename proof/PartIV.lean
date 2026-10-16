@@ -1,4 +1,4 @@
-import OAI08
+import core.OAI08
 import Mathlib.Algebra.Field.ZMod
 import Mathlib.Algebra.Order.Field.Basic
 import Mathlib.Algebra.Polynomial.Degree.SmallDegree

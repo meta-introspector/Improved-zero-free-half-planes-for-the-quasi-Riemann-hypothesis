@@ -1,6 +1,6 @@
-import OAI01
-import Mathlib.NumberTheory.MulChar.Duality
-import Mathlib.RingTheory.PrincipalIdealDomain
+import core.OAI01
+-- import Mathlib.NumberTheory.MulChar.Duality
+-- import Mathlib.RingTheory.PrincipalIdealDomain
 import RellichKondrachov.Analysis.FunctionalSpaces.Sobolev.Euclidean.Rellich
 
 /-! Pinned OAI dependency closure, consolidated without changing public namespaces.

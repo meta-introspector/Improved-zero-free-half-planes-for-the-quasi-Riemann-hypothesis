@@ -1,14 +1,14 @@
-import OAI05
-import Mathlib.Algebra.BigOperators.Ring.Finset
-import Mathlib.Analysis.Calculus.IteratedDeriv.Lemmas
-import Mathlib.Analysis.Normed.Group.Tannery
-import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
-import Mathlib.Analysis.SpecialFunctions.Log.Base
-import Mathlib.Data.Int.Interval
-import Mathlib.MeasureTheory.Group.Prod
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
-import Mathlib.MeasureTheory.Integral.Prod
-import Mathlib.RingTheory.UniqueFactorizationDomain.Finsupp
+import core.OAI05
+-- import Mathlib.Algebra.BigOperators.Ring.Finset
+-- import Mathlib.Analysis.Calculus.IteratedDeriv.Lemmas
+-- import Mathlib.Analysis.Normed.Group.Tannery
+-- import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+-- import Mathlib.Analysis.SpecialFunctions.Log.Base
+-- import Mathlib.Data.Int.Interval
+-- import Mathlib.MeasureTheory.Group.Prod
+-- import Mathlib.MeasureTheory.Integral.DominatedConvergence
+-- import Mathlib.MeasureTheory.Integral.Prod
+-- import Mathlib.RingTheory.UniqueFactorizationDomain.Finsupp
 
 /-! Pinned OAI dependency closure, consolidated without changing public namespaces.
 Original module boundaries and hashes are preserved below. -/

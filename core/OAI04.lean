@@ -1,11 +1,11 @@
-import OAI03
-import Mathlib.Algebra.BigOperators.Group.Finset.Preimage
-import Mathlib.Analysis.Complex.LocallyUniformLimit
-import Mathlib.Analysis.MellinInversion
-import Mathlib.Analysis.SpecialFunctions.Complex.LogBounds
-import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
-import Mathlib.MeasureTheory.Integral.Pi
-import Mathlib.RingTheory.UniqueFactorizationDomain.Multiplicative
+import core.OAI03
+-- import Mathlib.Algebra.BigOperators.Group.Finset.Preimage
+-- import Mathlib.Analysis.Complex.LocallyUniformLimit
+-- import Mathlib.Analysis.MellinInversion
+-- import Mathlib.Analysis.SpecialFunctions.Complex.LogBounds
+-- import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
+-- import Mathlib.MeasureTheory.Integral.Pi
+-- import Mathlib.RingTheory.UniqueFactorizationDomain.Multiplicative
 import PrimeNumberTheoremAnd.Wiener
 
 /-! Pinned OAI dependency closure, consolidated without changing public namespaces.

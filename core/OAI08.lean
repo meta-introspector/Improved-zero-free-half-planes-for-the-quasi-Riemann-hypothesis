@@ -1,7 +1,7 @@
-import OAI07
-import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
-import Mathlib.MeasureTheory.Constructions.Polish.Basic
-import Mathlib.NumberTheory.LSeries.PrimesInAP
+import core.OAI07
+-- import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
+-- import Mathlib.MeasureTheory.Constructions.Polish.Basic
+-- import Mathlib.NumberTheory.LSeries.PrimesInAP
 
 /-! Pinned OAI dependency closure, consolidated without changing public namespaces.
 Original module boundaries and hashes are preserved below. -/

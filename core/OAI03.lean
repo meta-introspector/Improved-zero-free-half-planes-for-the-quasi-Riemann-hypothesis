@@ -1,4 +1,4 @@
-import OAI02
+import core.OAI02
 
 /-! Pinned OAI dependency closure, consolidated without changing public namespaces.
 Original module boundaries and hashes are preserved below. -/
